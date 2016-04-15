@@ -1,0 +1,48 @@
+{
+  "name": "ZulipDesktop",
+  "productName": "ZulipDesktop",
+  "version": "0.0.1",
+  "description": "Zulip Desktop App",
+  "repository": "akashnimare/ZulipDesktop",
+  "author": {
+    "name": "Akash Nimare",
+    "email": "svnitakash@gmail.com",
+    "url": "akashnimare.in"
+  },
+  "engines": {
+    "node": ">=4"
+  },
+  "electronVersion": "0.33.3",
+  "scripts": {
+    "test": "xo",
+    "start": "electron ."  
+              },
+  "files": [
+    "index.js",
+    "browser.js",
+    "media/Icon.icns"
+  ],
+  "keywords": [
+    "electron-app",
+    "Zulip",
+    "Group Chat app"
+  ],
+  "dependencies": {
+    "electron-debug": "^0.2.1"
+  },
+  "devDependencies": {
+    "electron-packager": "^5.1.0",
+    "electron-prebuilt": "^0.33.3",
+    "xo": "*"
+  },
+  "xo": {
+    "esnext": true,
+    "envs": [
+      "node",
+      "browser"
+    ],
+    "ignores": [
+      "dist/**"
+    ]
+  }
+}
